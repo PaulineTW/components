@@ -22,6 +22,8 @@ body {
   /* line-height: 1; */
 }
 
+/* <!-- ACCORDION FAQ --> */
+
 .accordion {
   width: 700px;
   margin: 100px auto;
@@ -30,6 +32,8 @@ body {
   flex-direction: column;
   gap: 24px;
 }
+
+/* DEFAULT BOX SETTING */
 
 .item {
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
@@ -46,16 +50,12 @@ body {
 .text {
   font-size: 24px;
   font-weight: 500;
-  color:#41574E;
-}
-
-.number {
   color: #ced4da;
 }
 
 .hidden-box {
   grid-column: 2;
-  /* display: none; */
+  display: none;
 }
 
 .hidden-box p {
@@ -72,3 +72,17 @@ body {
   gap: 12px;
 }
 
+/* OPEN BOX SETTING */
+
+.open {
+  border-top: 4px solid #41574E;
+}
+
+.open .hidden-box {
+  display: block;
+}
+
+.open .number,
+.open .text {
+  color: #41574E;
+}
